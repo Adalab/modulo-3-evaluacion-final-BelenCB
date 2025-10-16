@@ -1,8 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
-import './index.css'
-import App from './pages/App.jsx'
+import './index.css';
+import App from './pages/App.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

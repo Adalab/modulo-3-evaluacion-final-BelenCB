@@ -1,20 +1,11 @@
-const getUsers = () => {
-    return fetch("https://randomuser.me/api/?results=20")
+const getCharacters = () => {
+    return fetch("https://hp-api.onrender.com/api/characters/")
         .then((response) => response.json())
         .then((data) => {
-            const cleanData = data.results.map(user => {
-                return {
-                    id: user.login.uuid,
-                    name: user.name.first + " " + user.name.last,
-                    gender: user.gender,
-                    picture: user.picture.thumbnail,
-                    city: user.location.city,
-                    country: user.location.country,
-                };
-            });
+            const cleanData = data.slice(0, 25);
             console.log(cleanData);
             return cleanData;
             });
 };
 
-export default getUsers;
+export default getCharacters;

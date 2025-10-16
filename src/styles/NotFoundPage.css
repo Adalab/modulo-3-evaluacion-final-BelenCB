@@ -1,0 +1,10 @@
+.not-found-title {
+    color:rgb(154, 205, 250);
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.not-found-text {
+    color: rgb(212, 174, 1);
+    font-size: 30px;
+}
