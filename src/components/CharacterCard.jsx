@@ -14,7 +14,7 @@ const CharacterCard = ({ character }) => {
 
 export default CharacterCard;
 
-CharacterCard.proptypes = {
+CharacterCard.propTypes = {
     character: PropTypes.shape({
         name: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,

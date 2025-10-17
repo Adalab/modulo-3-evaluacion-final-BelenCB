@@ -1,4 +1,5 @@
 import 'react';
+import { Link } from "react-router-dom";
 import Header from '../components/Header';
 import '../styles/NotFoundPage.css';
 
@@ -9,6 +10,7 @@ const NotFoundPage = () => {
       <Header />
       <h1 className='not-found-title'>¡Confundus!</h1>
       <p className='not-found-text'>Sorry muggle, the character you're looking for doesn't exist in the wizarding world</p>
+      <Link to="/">Back to home</Link>
     </>
   )
 };

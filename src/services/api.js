@@ -3,7 +3,6 @@ const getCharacters = () => {
         .then((response) => response.json())
         .then((data) => {
             const cleanData = data.slice(0, 25);
-            console.log(cleanData);
             return cleanData;
             });
 };

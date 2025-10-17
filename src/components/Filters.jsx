@@ -35,7 +35,7 @@ const Filters = ({ name, house, updateName, updateHouse }) => {
 
 export default Filters;
 
-Filters.proptypes = {
+Filters.propTypes = {
     name: PropTypes.string.isRequired,
     house: PropTypes.string.isRequired,
     updateName: PropTypes.func.isRequired,

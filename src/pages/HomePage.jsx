@@ -9,15 +9,15 @@ import '../styles/HomePage.css';
 const HomePage = () => {
 
     const [characters, setCharacters] = useState(ls.get("characters", []));
-    const [name, setName] = useState("");
-    const [house, setHouse] = useState("");
+    const [name, setName] = useState(ls.get("name", ""));
+    const [house, setHouse] = useState(ls.get("house",""));
     
     useEffect(() => {
         if (characters.length === 0) {
             getCharacters().then(data => {
             setCharacters(data);
             ls.set("characters", data);
-            })
+            });
         }
     });
 

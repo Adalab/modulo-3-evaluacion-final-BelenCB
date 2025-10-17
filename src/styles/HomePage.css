@@ -40,3 +40,8 @@ input, select {
     width: 237px;
     height: 341px;
 }
+
+.no-character-text {
+    font-size: 24px;
+    color: rgb(255, 238, 190);
+}
