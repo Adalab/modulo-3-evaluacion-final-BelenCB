@@ -21,6 +21,11 @@ const HomePage = () => {
         }
     });
 
+    useEffect(() => {
+        ls.set("name", name);
+        ls.set("house", house);
+    }, [name, house]);
+
     const updateName = (value) => {
         setName(value);
     };
