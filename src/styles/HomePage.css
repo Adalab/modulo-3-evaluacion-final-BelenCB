@@ -45,3 +45,34 @@ input, select {
     font-size: 24px;
     color: rgb(255, 238, 190);
 }
+
+.reset-button {
+    background-color: rgb(212, 174, 1);
+    align-self: center;
+}
+
+.reset-button:hover {
+    background-color: black;
+    color: rgb(212, 174, 1);
+    border-color: rgb(212, 174, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    .header-container {
+        padding: 50px 100px 50px 100px;
+    }
+
+    .character-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .header-container {
+        padding: 50px;
+    }
+
+    .character-list {
+        display: block;
+    }
+}

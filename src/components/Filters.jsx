@@ -1,5 +1,6 @@
 import 'react';
 import PropTypes from "prop-types";
+import ls from "../services/localStorage";
 
 const Filters = ({ name, house, updateName, updateHouse }) => {
 
@@ -9,6 +10,13 @@ const Filters = ({ name, house, updateName, updateHouse }) => {
 
     const handleChangeHouse = (ev) => {
         updateHouse(ev.target.value);
+    };
+
+    const handleReset = () => {
+        updateName("");
+        updateHouse("");
+        ls.remove("name");
+        ls.remove("house");
     };
 
     return (
@@ -29,6 +37,7 @@ const Filters = ({ name, house, updateName, updateHouse }) => {
                     </select>
                 </label>
             </div>
+            <button className="reset-button" onClick={handleReset}>Restart search</button>
         </form>
     );
 };

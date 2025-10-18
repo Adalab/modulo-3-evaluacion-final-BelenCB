@@ -1,5 +1,6 @@
 .character-detail {
     margin: 50px 150px 50px 150px;
+    padding: 0 10px 0 10px;
     border-style: solid;
     border-color: rgb(212, 174, 1);
     border-width: 3px;
@@ -33,4 +34,19 @@
 .house-logo {
     width: 160px;
     height: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+    .character-detail {
+    margin: 50px 70px 50px 70px;
+    padding: 20px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .character-detail {
+    margin: 50px;
+    padding: 20px;
+    display: block;
+    }
 }

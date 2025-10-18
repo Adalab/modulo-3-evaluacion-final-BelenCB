@@ -7,5 +7,6 @@ La página web utiliza esta librería de JavaScript para:
 
 - Obtener la lista de personajes desde una API externa
 - Mostrar las fichas de cada uno de los personajes
-- Poder filtrarlos según lo que el usuario escriba en el input de búsqueda
-- Guardar la información buscada en localStorage
+- Poder filtrar estos personajes según lo que el usuario escriba en el input de búsqueda por nombre o la opción que seleccione en el select de casas
+- Guardar la información buscada en localStorage por si se desea recuperar más tarde
+- Resetear la búsqueda para empezar de nuevo
