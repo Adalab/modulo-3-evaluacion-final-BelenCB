@@ -19,7 +19,7 @@ const HomePage = () => {
             ls.set("characters", data);
             });
         }
-    });
+    },[]);
 
     useEffect(() => {
         ls.set("name", name);
